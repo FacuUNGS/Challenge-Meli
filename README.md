@@ -8,6 +8,7 @@ npm run dev
 yarn dev
 ```
 Para ejecutar los test e2e:
+
 1 - ejecutar en entorno test
 
 ```bash
