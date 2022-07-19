@@ -1,0 +1,22 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.container {
+  @include container-size();
+  @include use-flex(column, center, none);
+  gap: 16px;
+}
+
+.breadcrumb {
+  @include container-size(25px, 988px);
+  @include use-flex(row, none, none);
+}
+
+.list {
+  @include container-size(90%, 988px);
+  display: grid;
+  grid-template-rows: repeat(4, 212px);
+  grid-template-columns: 1;
+  border-radius: 5px;
+  gap: 1px;
+}

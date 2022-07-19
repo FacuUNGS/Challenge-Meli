@@ -1,0 +1,80 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.container {
+  @include container-size();
+  @include use-flex(column, center, none);
+  gap: 16px;
+}
+
+.detail {
+  @include container-size(auto, 988px);
+  display: grid;
+  grid-template-columns: 680px 1fr;
+  border-radius: 5px;
+  background-color: $white-color;
+  padding: 32px;
+  gap: 5px;
+}
+
+.description {
+  display: grid;
+  grid-template-rows: 680px 30px auto;
+  gap: 32px;
+}
+
+.img {
+  border-radius: 4px;
+  position: relative;
+}
+
+.title {
+  @include use-flex(row, center, none);
+  font-size: 28px;
+}
+
+.text {
+  font-size: 16px;
+  color: $light-grey-color;
+}
+
+.product {
+  @include use-flex(column, none, none);
+  gap: 32px;
+}
+
+.sold {
+  padding-bottom: 14px;
+  font-size: 14px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 46px;
+  font-weight: 400px;
+}
+
+.button {
+  @include container-size(40px);
+  color: $background-color;
+  background-color: $button-color;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.breadcrumb {
+  @include container-size(25px, 988px);
+  @include use-flex(row, none, none);
+}
+
+.decimals {
+  font-size: 32px;
+  font-weight: 400px;
+  position: relative;
+  bottom: 10px;
+}

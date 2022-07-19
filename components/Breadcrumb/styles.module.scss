@@ -1,0 +1,25 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.container {
+  @include use-flex(row, center, none);
+  @include container-size();
+}
+
+.category {
+  @include use-flex(row, none, none);
+  font-size: 14px;
+  color: $light-grey-color;
+  gap: 10px;
+}
+
+.list {
+  @include use-flex(row, none, none);
+  list-style-type: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.strong {
+  font-weight: bold;
+}

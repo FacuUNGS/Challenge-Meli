@@ -1,0 +1,33 @@
+@import "styles/colors";
+@import "styles/mixins";
+
+.container {
+  @include container-size();
+  @include use-flex(row);
+  background-color: $yellow-color;
+  gap: 30px;
+}
+
+.searcher {
+  @include container-size();
+  border-radius: 4px 0px 0px 4px;
+  border: 0px;
+  padding: 0 10px 0 10px;
+  font-size: 18px;
+  outline: none !important;
+}
+
+.button {
+  border-radius: 0px 4px 4px 0px;
+  border: 0px;
+  background-size: 20px;
+  @include container-size(100%, 40px);
+  background: $background-color url("/Search.png") no-repeat right 10px center;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.form {
+  @include container-size(65%, 910px);
+  @include use-flex(row, none, none);
+}
