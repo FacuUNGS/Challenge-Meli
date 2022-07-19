@@ -1,6 +1,6 @@
-## Getting Started
+## Instrucciones
 
-Para ejecutar en entorno development
+Para ejecutar en entorno de desarrollo
 
 ```bash
 npm run dev
