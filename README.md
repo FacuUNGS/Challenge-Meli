@@ -1,5 +1,13 @@
 ## Instrucciones
 
+Para instalar las dependencias
+
+```bash
+npm install
+# or
+yarn install
+```
+
 Para ejecutar en entorno de desarrollo
 
 ```bash
